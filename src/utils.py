@@ -436,6 +436,13 @@ def generate_model_report(model, X_test: pd.DataFrame, y_test: pd.Series,
     return report
 
 
+def calculate_statistics(data):
+    return {
+        'mean': data.mean(),
+        'std': data.std(),
+        'count': len(data)
+    }
+
 # Example usage
 if __name__ == "__main__":
     # Example of how to use utility functions
